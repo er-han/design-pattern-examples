@@ -1,0 +1,3 @@
+include 'builder-pattern-example'
+
+rootProject.name = 'design-pattern-examples'
