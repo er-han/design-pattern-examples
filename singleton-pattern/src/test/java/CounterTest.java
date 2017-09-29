@@ -16,7 +16,8 @@ public class CounterTest {
 
   @Test
   public void shouldUseTheSameInstance() {
-    final Counter counter = Counter.getInstance();
+    final Counter counter1 = Counter.getInstance();
+    final Counter counter2 = Counter.getInstance();
 
     Random random = new Random();
 
@@ -24,15 +25,14 @@ public class CounterTest {
       boolean increase = random.nextBoolean();
 
       if (increase) {
-        counter.increase();
+        counter1.increase();
       } else {
-        counter.decrease();
+        counter2.decrease();
       }
     }
 
-    final Counter counter2 = Counter.getInstance();
 
-    assertEquals(counter.getCount(), counter2.getCount());
+    assertEquals(counter1.getCount(), counter2.getCount());
   }
 
 }
