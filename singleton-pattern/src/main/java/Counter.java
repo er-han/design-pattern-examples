@@ -21,7 +21,7 @@ public class Counter {
   }
 
   public void decrease() {
-    this.count -= -1;
+    this.count -= 1;
   }
 
 
