@@ -1,4 +1,5 @@
 include 'builder-pattern'
 include 'singleton-pattern'
+include 'factory-pattern'
 
 rootProject.name = 'design-pattern-examples'
